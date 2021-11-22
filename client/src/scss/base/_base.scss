@@ -1,0 +1,21 @@
+@include critical {
+    :root {
+        --color-text: $yellow;
+        --color-text-secondary: $green;
+        --color-background: $purple;
+        --color-background-secondary: $pink;
+        
+        --color-accent: $blue;
+    }
+    html {
+        scroll-behavior: smooth;
+        body {
+            padding: 0;
+            margin: 0;
+            
+            * {
+                box-sizing: border-box !important;
+            }
+        }
+    }
+}

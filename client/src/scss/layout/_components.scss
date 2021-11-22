@@ -1,0 +1,14 @@
+@include critical {
+    .marquee {
+        position: absolute;
+        display: none;
+    }
+}
+@include non-critical {
+    .marquee {
+        animation: marqueeHorizontal 5s linear 0s infinite alternate;
+        &--right {
+            animation-direction: alternate-reverse;
+        }
+    }
+}

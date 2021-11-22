@@ -1,14 +1,5 @@
 const express = require('express');
 const path = require('path');
-const i18n = require('i18n');
-
-
-i18n.configure({
-    locales: ['en-US', 'sv-SE'],
-    directory: path.join(__dirname, 'locales'),
-    objectNotation: true
-});
-
 
 const routes = require('./routes');
 

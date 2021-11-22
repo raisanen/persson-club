@@ -1,0 +1,20 @@
+@mixin critical {
+    @if $critical == true {
+        @content;
+    }
+}
+@mixin non-critical {
+    @if $critical == false {
+        @content;
+    }
+}
+@mixin desktop-only() {
+  @media screen and (min-width: 701px) {
+      @content;
+  }
+}
+@mixin mobile-only() {
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+}
